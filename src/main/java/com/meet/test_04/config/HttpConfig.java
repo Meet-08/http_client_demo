@@ -1,13 +1,13 @@
 package com.meet.test_04.config;
 
-import com.meet.test_04.RestTemplateNew;
+import com.meet.test_04.RestClientNew;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.support.RestClientHttpServiceGroupConfigurer;
 import org.springframework.web.service.registry.ImportHttpServices;
 
-@Configuration // This config is used for RestTemplateNew client
-@ImportHttpServices(types = { RestTemplateNew.class })
+@Configuration // This config is used for RestClientNew client
+@ImportHttpServices(types = {RestClientNew.class})
 public class HttpConfig {
 
     @Bean

@@ -1,20 +1,19 @@
 package com.meet.test_04;
 
-import java.util.List;
-
+import com.meet.test_04.models.Post;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 
-import com.meet.test_04.models.Post;
+import java.util.List;
 
-//Old RestTemplate based implementation
+//Old RestClient based implementation
 @Service
-public class RestTemplateOld {
+public class RestClientOld {
 
     private final RestClient client;
 
-    public RestTemplateOld(RestClient.Builder builder) {
+    public RestClientOld(RestClient.Builder builder) {
         this.client = builder
                 .baseUrl("https://jsonplaceholder.typicode.com")
                 .build();
