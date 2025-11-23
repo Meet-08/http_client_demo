@@ -9,7 +9,7 @@ import java.util.List;
 
 //New way to create RestTemplate using HttpExchange annotation
 @HttpExchange(url = "https://jsonplaceholder.typicode.com")
-public interface RestTemplateNew {
+public interface RestClientNew {
 
     @GetExchange("/posts")
     List<Post> findAll();
